@@ -1,8 +1,8 @@
 Slighly changed from jrnold's version
 ==========================
 
-alert: always solarized red
-example: always solarized cyan
+- *alert* always solarized red
+- *example*: always solarized cyan
 
 This allows more consistent style with my previous presentations. It's hence a 
 little more colorful. Also, using shaded boxes (e.g. Boadilla theme) looks
@@ -29,7 +29,7 @@ Download the theme from https://github.com/bashseb/beamercolorthemesolarized and
 place it in either the same folder as your presentation .tex file or
 in the LaTeX installation tree.
 
-I personally use the following path (Linux, texlive sources this)
+I personally use the following path (Linux, ``texlive`` sources this)
 
 ::
   
