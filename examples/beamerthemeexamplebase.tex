@@ -1,6 +1,7 @@
 % Copyright 2003--2007 by Till Tantau
 % Copyright 2010 by Vedran Mileti\'c
 % Copyright 2012 by Jeffrey Arnold
+% Copyright 2014 by Sebastian Eiser
 %
 % This file may be distributed and/or modified
 %
@@ -9,17 +10,50 @@
 %
 % See the file doc/licenses/LICENSE for more details.
 %
-% Slightly modified for the beamerthemesolarized to turn
-% it into a jinja2 template.
+% Slightly modified from Jeffrey's example to show the changes to the sty
+%
 \documentclass[hyperref={draft}]{beamer}
 
-\usecolortheme[accent=\VAR{color},\VAR{dark}]{solarized}
+\usepackage{tikz}
+
+\usetheme{Boadilla} %shadows, blocks with rounded corners, 
+% but I don't like the balls, prefer what Rochester uses
+\setbeamertemplate{enumerate items}[square]
+\setbeamertemplate{itemize items}[square]
+\setbeamertemplate{section in toc}[square]
+\setbeamertemplate{subsection in toc}[square]
+
+%\usetheme{Rochester} %plain, nice enumerate, strong blocktitles (ex+alert)
+%\usetheme{Berkeley} %side bar, requires tuning of beamercolorthemesolarized.sty
+%\usetheme{Malmoe}  % just like defaults, but installs a footline with name and title
+\setbeamertemplate{navigation symbols}{}
+
+%%%%% 
+% my custom version of beamercolorthemesolarized is installed in 
+% ~/texmf/tex/latex/commonstuff/beamercolorthemesolarized.sty
+% and is included in the dotfiles git repo
+%%%%%
+
+\usecolortheme[accent=yellow, dark]{solarized}
+\setbeamertemplate{headline}
+{\large \begin{beamercolorbox}[center,ht=2.5ex,dp=1ex]{title in head/foot} \hspace{0pt plus 1fill}  {\Large\insertsection} \hspace{0pt plus 1filll} {\large \tikz[baseline=-.75ex,outer sep=0pt, inner sep=0pt]\node[minimum height=3ex,draw,thin] (X) {logo};  \hspace{3pt} }\end{beamercolorbox}}
 
 \beamertemplatetransparentcovered
 
-\usepackage{times}
+%%%% fonts: 
+\usefonttheme[]{serif} % looks professional, but requires high resultiond display/projector
+%\usefonttheme[]{structuresmallcapsserif} % looks formal. slow reading attn
+% allow arbitrary font sizes (seems to remove just the warning)
+\usepackage{lmodern}% http://ctan.org/pkg/lm
+\usepackage{palatino} % only looks good serif
+%\usepackage{times} % Note to self: do not ever use!!
+%\usepackage{arev} % requires smaller font?
+%\usepackage{utopia} % only serif avail. looks nice
 
 \title{There Is No Largest Prime Number}
+\titlegraphic{
+\tikz[]\node[minimum height=3ex,draw,thin] (X) {logo};
+}
 \subtitle{With an introduction to a new proof technique}
 
 \author[Euklid]{Euklid of Alexandria}
@@ -28,7 +62,8 @@
 
 \begin{document}
 
-\begin{frame}
+
+\begin{frame}[plain]
   \titlepage
   \tableofcontents
 \end{frame}
@@ -54,5 +89,40 @@
     \end{enumerate}
   \end{proof}
 \end{frame}
+
+\section{Another section to highlight block envs}
+\subsection{Subsection yes I use blocks a lot}
+\begin{frame}
+  %\frametitle{schoener Tag gewesen obwohl die Sonne nicht schien}
+  %\framesubtitle{The proof uses \textit{reductio ad absurdum}.}
+  \begin{block}{A regular block is in accent color}
+    Using \alert{alerted text} now makes it almost ridiculously colorful
+    \begin{itemize}
+      \item this is the first item of an itemize env
+        \begin{itemize}
+          \item Notice how the color of the item matches the block
+        \end{itemize}
+    \end{itemize}
+  \end{block}
+  \pause
+  \begin{exampleblock}{Now this is an example block}
+    \begin{itemize}
+      \item item uno
+      \item item due
+    \end{itemize}
+    Some \emph{emphasis} is needed.
+  \end{exampleblock}
+  \pause
+  \begin{alertblock}{Finally, an alertblock}
+    Using another itemize env
+    \begin{itemize}
+      \item un
+      \item dos
+    \end{itemize}
+  \end{alertblock}
+
+  
+\end{frame}
+
 
 \end{document}

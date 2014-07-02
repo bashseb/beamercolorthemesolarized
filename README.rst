@@ -96,32 +96,35 @@ documentation).
 Example 1
 ------------------
 
-A light background with yellow  accents (the default).
+A light background with blue accents.
 
 .. code:: latex
 
   \usecolortheme{solarized} 
 
-.. image:: https://raw.github.com/jrnold/beamercolorthemesolarized/master/examples/example_yellow_light-1.png
+.. image:: https://raw.github.com/jrnold/beamercolorthemesolarized/master/examples/example_blue_light-bashseb-1.png
    :scale: 50%
 
-.. image:: https://raw.github.com/jrnold/beamercolorthemesolarized/master/examples/example_yellow_light-2.png
+.. image:: https://raw.github.com/jrnold/beamercolorthemesolarized/master/examples/example_blue_light-bashseb-2.png
    :scale: 50%
 
 Example 2
 ------------------
 
-A light background with blue accents.
+Same colors with boadilla (but no balls)
 
 .. code:: latex
 
   \usecolortheme[accent=blue]{solarized} 
 
 
-.. image:: https://raw.github.com/jrnold/beamercolorthemesolarized/master/examples/example_blue_light-1.png
+.. image:: https://raw.github.com/jrnold/beamercolorthemesolarized/master/examples/example_blue_light-bashseb-boadilla-1.png
    :scale: 50%
 
-.. image:: https://raw.github.com/jrnold/beamercolorthemesolarized/master/examples/example_blue_light-2.png
+.. image:: https://raw.github.com/jrnold/beamercolorthemesolarized/master/examples/example_blue_light-bashseb-boadilla-2.png
+   :scale: 50%
+
+.. image:: https://raw.github.com/jrnold/beamercolorthemesolarized/master/examples/example_blue_light-bashseb-boadilla-3.png
    :scale: 50%
 
 Example 3
@@ -133,10 +136,13 @@ A dark background with yellow accents.
 
   \usecolortheme[dark]{solarized} 
 
-.. image:: https://raw.github.com/jrnold/beamercolorthemesolarized/master/examples/example_yellow_dark-1.png
+.. image:: https://raw.github.com/jrnold/beamercolorthemesolarized/master/examples/example_yellow_dark-bashseb-boadilla-1.png
    :scale: 50%
 
-.. image:: https://raw.github.com/jrnold/beamercolorthemesolarized/master/examples/example_yellow_dark-2.png
+.. image:: https://raw.github.com/jrnold/beamercolorthemesolarized/master/examples/example_yellow_dark-bashseb-boadilla-2.png
+   :scale: 50%
+
+.. image:: https://raw.github.com/jrnold/beamercolorthemesolarized/master/examples/example_yellow_dark-bashseb-boadilla-3.png
    :scale: 50%
 
 ..  LocalWords:  solarized

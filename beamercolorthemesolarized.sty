@@ -105,9 +105,10 @@
 % I prefer strong contrasts
 \setbeamercolor{normal text}{fg=solarizedRebase3, bg=solarizedRebase03}
 % alert is always red
-\setbeamercolor{alerted text}{fg=solarizedRed, bg=solarizedRebase02}
+\setbeamercolor{alerted text}{fg=solarizedRed, bg=solarizedRebase03}
 % based css pre element 
 \setbeamercolor{example text}{fg=solarizedCyan, bg=solarizedRebase02}
+\setbeamercolor{notnormal text}{fg=solarizedAccent, bg=solarizedRebase02}
 
 % Header and footer from CSS 
 \setbeamercolor{footline}{bg=solarizedRebase02,fg=solarizedRebase01}
@@ -119,10 +120,12 @@
 \setbeamercolor*{title}{fg=solarizedAccent}
 %\setbeamercolor*{author}{fg=solarizedAccent} %ok 3 is chosen
 % more subtle:
-\setbeamercolor*{institute}{fg=solarizedRebase1} 
+\setbeamercolor*{institute}{fg=solarizedRebase1}
 
 % Structure elements use css style for header 
-\setbeamercolor*{structure}{bg=solarizedRebase01, fg=solarizedRebase1}
+% this change makes items and enums appear in accented color. When using e.g. boadilla 
+% (rounded blocks w/ shadow) this creates a consistent look wrt alertblock and exampleblock
+\setbeamercolor*{structure}{bg=solarizedRebase01, fg=solarizedAccent}
 
 % Do not mess with subtle colors in palette. I don't like it. 
 \setbeamercolor*{palette primary}{bg=solarizedRebase02, fg=solarizedRebase1}
@@ -134,7 +137,8 @@
 %\setbeamercolor{block title alerted}{parent=alerted text, bg=solarizedRebase02}
 %\setbeamercolor{block title example}{}
 
-\setbeamercolor{block body}{parent=normal text, bg=solarizedRebase02}
+\setbeamercolor{block body}{bg=solarizedRebase02}
+% \setbeamercolor{block body}{parent=notnormal text}
 \setbeamercolor{block body alerted}{parent=normal text, bg=solarizedRebase02}
 \setbeamercolor{block body example}{parent=normal text, bg=solarizedRebase02}
 
