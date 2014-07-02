@@ -1,3 +1,11 @@
+Slighly changed from jrnold
+==========================
+
+accent always red, example cyan
+
+
+original README follows:
+
 Beamer Color Theme Solarized
 ===============================
 

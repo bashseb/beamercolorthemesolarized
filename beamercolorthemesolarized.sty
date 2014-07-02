@@ -102,10 +102,12 @@
 
 \mode<presentation>
 
-\setbeamercolor{normal text}{fg=solarizedRebase0, bg=solarizedRebase03}
-\setbeamercolor{alerted text}{fg=solarizedAccent}
+% I prefer strong contrasts
+\setbeamercolor{normal text}{fg=solarizedRebase3, bg=solarizedRebase03}
+% alert is always red
+\setbeamercolor{alerted text}{fg=solarizedRed, bg=solarizedRebase02}
 % based css pre element 
-\setbeamercolor{example text}{fg=solarizedRebase1, bg=solarizedRebase02}
+\setbeamercolor{example text}{fg=solarizedCyan, bg=solarizedRebase02}
 
 % Header and footer from CSS 
 \setbeamercolor{footline}{bg=solarizedRebase02,fg=solarizedRebase01}
@@ -115,24 +117,26 @@
 \setbeamercolor*{titlelike}{fg=solarizedAccent}
 \setbeamercolor*{frametitle}{fg=solarizedAccent}
 \setbeamercolor*{title}{fg=solarizedAccent}
+%\setbeamercolor*{author}{fg=solarizedAccent} %ok 3 is chosen
+% more subtle:
+\setbeamercolor*{institute}{fg=solarizedRebase1} 
 
 % Structure elements use css style for header 
 \setbeamercolor*{structure}{bg=solarizedRebase01, fg=solarizedRebase1}
 
 % Do not mess with subtle colors in palette. I don't like it. 
-\setbeamercolor*{palette primary}{bg=solarizedRebase01, fg=solarizedRebase1}
-\setbeamercolor*{palette secondary}{bg=solarizedRebase01, fg=solarizedRebase1}
-\setbeamercolor*{palette tertiary}{bg=solarizedRebase01, fg=solarizedRebase1}
-\setbeamercolor*{palette quaternary}{bg=solarizedRebase01, fg=solarizedRebase1}
-
+\setbeamercolor*{palette primary}{bg=solarizedRebase02, fg=solarizedRebase1}
+\setbeamercolor*{palette secondary}{bg=solarizedRebase02, fg=solarizedRebase1}
+\setbeamercolor*{palette tertiary}{bg=solarizedRebase02, fg=solarizedRebase1}
+\setbeamercolor*{palette quaternary}{bg=solarizedRebase02, fg=solarizedRebase1} 
 % Make Blocks slightly lighter/darker
 \setbeamercolor{block title}{fg=solarizedAccent, bg=solarizedRebase02}
-%\setbeamercolor{block title alerted}{}
+%\setbeamercolor{block title alerted}{parent=alerted text, bg=solarizedRebase02}
 %\setbeamercolor{block title example}{}
 
 \setbeamercolor{block body}{parent=normal text, bg=solarizedRebase02}
-% \setbeamercolor{block body alerted}{}
-% \setbeamercolor{block body example}{}
+\setbeamercolor{block body alerted}{parent=normal text, bg=solarizedRebase02}
+\setbeamercolor{block body example}{parent=normal text, bg=solarizedRebase02}
 
 % same as footline
 % Set Sidebar and footline to use the css style for footer
@@ -145,6 +149,11 @@
 % border-color for headings
 \setbeamercolor{separation line}{fg=solarizedRebase0}
 \setbeamercolor{fine separation line}{fg=solarizedRebase0}
+
+% consistency:
+\setbeamercolor*{section in toc}{fg=solarizedRebase3}
+\setbeamercolor*{subsection in toc}{fg=solarizedRebase1}
+\setbeamercolor*{subsubsection in toc}{fg=solarizedRebase1}
 
 \setbeamercolor*{section in sidebar shaded}{parent=palette sidebar primary}
 % a.hover.navlink in CSS
