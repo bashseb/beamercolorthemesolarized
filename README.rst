@@ -1,10 +1,12 @@
-Slighly changed from jrnold
+Slighly changed from jrnold's version
 ==========================
 
-accent always red, example cyan
+alert: always solarized red
+example: always solarized cyan
 
-
-original README follows:
+This allows more consistent style with my previous presentations. It's hence a 
+little more colorful. Also, using shaded boxes (e.g. Boadilla theme) looks
+consistent. Updated screens are below
 
 Beamer Color Theme Solarized
 ===============================
@@ -20,16 +22,19 @@ and its `github page
 <https://github.com/altercation/ethanschoonover.com>`_ more
 information about the color palette and themes for Vim, Emacs, etc.
 
-If you use **R**, I have also written a `ggplot
-<http://had.co.nz/ggplot2/>`_ plot theme using the Solarized colors,
-which is available https://github.com/jrnold/ggthemes.
-
 Installation
 ===============
 
-Download the theme from https://github.com/jrnold/beamercolorthemesolarized and
+Download the theme from https://github.com/bashseb/beamercolorthemesolarized and
 place it in either the same folder as your presentation .tex file or
 in the LaTeX installation tree.
+
+I personally use the following path (Linux, texlive sources this)
+
+::
+  
+  ~/texmf/tex/latex/commonstuff/beamercolorthemesolarized.sty
+
 
 Usage
 ================
@@ -100,49 +105,49 @@ A light background with blue accents.
 
 .. code:: latex
 
-  \usecolortheme{solarized} 
+  \usecolortheme[accent=blue]{solarized} 
 
-.. image:: https://raw.github.com/jrnold/beamercolorthemesolarized/master/examples/example_blue_light-bashseb-1.png
+.. image:: https://raw.github.com/bashseb/beamercolorthemesolarized/master/examples/example_blue_light-bashseb-1.png
    :scale: 50%
 
-.. image:: https://raw.github.com/jrnold/beamercolorthemesolarized/master/examples/example_blue_light-bashseb-2.png
+.. image:: https://raw.github.com/bashseb/beamercolorthemesolarized/master/examples/example_blue_light-bashseb-2.png
    :scale: 50%
 
 Example 2
 ------------------
 
-Same colors with boadilla (but no balls)
+Same colors with boadilla theme (but itemize/enum/section balls replaced by sane squares)
 
 .. code:: latex
 
   \usecolortheme[accent=blue]{solarized} 
 
 
-.. image:: https://raw.github.com/jrnold/beamercolorthemesolarized/master/examples/example_blue_light-bashseb-boadilla-1.png
+.. image:: https://raw.github.com/bashseb/beamercolorthemesolarized/master/examples/example_blue_light-bashseb-boadilla-1.png
    :scale: 50%
 
-.. image:: https://raw.github.com/jrnold/beamercolorthemesolarized/master/examples/example_blue_light-bashseb-boadilla-2.png
+.. image:: https://raw.github.com/bashseb/beamercolorthemesolarized/master/examples/example_blue_light-bashseb-boadilla-2.png
    :scale: 50%
 
-.. image:: https://raw.github.com/jrnold/beamercolorthemesolarized/master/examples/example_blue_light-bashseb-boadilla-3.png
+.. image:: https://raw.github.com/bashseb/beamercolorthemesolarized/master/examples/example_blue_light-bashseb-boadilla-3.png
    :scale: 50%
 
 Example 3
 ------------------
 
-A dark background with yellow accents.
+A dark background with yellow (default) accents.
 
 .. code:: latex
 
   \usecolortheme[dark]{solarized} 
 
-.. image:: https://raw.github.com/jrnold/beamercolorthemesolarized/master/examples/example_yellow_dark-bashseb-boadilla-1.png
+.. image:: https://raw.github.com/bashseb/beamercolorthemesolarized/master/examples/example_yellow_dark-bashseb-boadilla-1.png
    :scale: 50%
 
-.. image:: https://raw.github.com/jrnold/beamercolorthemesolarized/master/examples/example_yellow_dark-bashseb-boadilla-2.png
+.. image:: https://raw.github.com/bashseb/beamercolorthemesolarized/master/examples/example_yellow_dark-bashseb-boadilla-2.png
    :scale: 50%
 
-.. image:: https://raw.github.com/jrnold/beamercolorthemesolarized/master/examples/example_yellow_dark-bashseb-boadilla-3.png
+.. image:: https://raw.github.com/bashseb/beamercolorthemesolarized/master/examples/example_yellow_dark-bashseb-boadilla-3.png
    :scale: 50%
 
 ..  LocalWords:  solarized
