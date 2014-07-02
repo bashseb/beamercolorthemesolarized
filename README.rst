@@ -116,7 +116,7 @@ A light background with blue accents.
 Example 2
 ------------------
 
-Same colors with boadilla theme (but itemize/enum/section balls replaced by sane squares)
+Same colors with **boadilla** theme (but itemize/enum/section balls replaced by sane squares)
 
 .. code:: latex
 
